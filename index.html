@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Store</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">CAR STORE</div>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <h1>Welcome to Car Store</h1>
+      <p>Find your perfect car by make, year, or price!</p>
+    </section>
+
+    <!-- Controls Section -->
+    <section class="controls">
+      <div class="filter-search-sort">
+        <label for="makeFilter">Filter by Make:</label>
+        <select id="makeFilter">
+          <option value="All">All Makes</option>
+          <option value="Toyota">Toyota</option>
+          <option value="Mazda">Mazda</option>
+          <option value="Nissan">Nissan</option>
+          <option value="Mercedes">Mercedes</option>
+          <option value="BMW">BMW</option>
+        </select>
+
+        <input type="text" id="searchBar" placeholder="Search by make..." />
+
+        <label for="sortSelect">Sort By:</label>
+        <select id="sortSelect">
+          <option value="">None</option>
+          <option value="price">Price</option>
+          <option value="year">Year</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Car Listings -->
+    <main>
+      <div id="carList" class="car-list"></div>
+      <div id="carDetails" class="car-details"></div>
+    </main>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        This is a simple car store app that lets you view cars and filter by
+        make, price, or year. Click on a car to view its details.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: contact@carstore.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Brian Cheruiyot. All rights reserved.</p>
+    </footer>
+
+    <script src="./src/index.js" defer></script>
+  </body>
+</html>
