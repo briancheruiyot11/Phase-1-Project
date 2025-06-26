@@ -2,30 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Car Store</title>
+    <link rel="icon" type="image/png" href="./images/faviconlogo.png" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- Navigation Bar -->
     <header>
       <nav class="navbar">
-        <div class="logo">CAR STORE</div>
+        <div class="logo">VeloCity Cars</div>
         <ul class="nav-links">
-          <li><a href="#hero">Home</a></li>
+          <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><button id="viewOrdersBtn">Orders</button></li>
         </ul>
       </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section id="hero">
-      <h1>Welcome to Car Store</h1>
-      <p>Find your perfect car by make, year, or price!</p>
+      <h1>Drive Your Dream Car Today</h1>
+      <p>
+        Welcome to <strong>VeloCity Cars</strong> your digital showroom for new
+        and used cars.<br />
+        We connect you to a wide range of vehicles from trusted brands including
+        Toyota, Nissan, BMW, Mercedes, and more.
+      </p>
     </section>
 
-    <!-- Controls Section -->
+    <!-- Controls -->
     <section class="controls">
       <div class="filter-search-sort">
         <label for="makeFilter">Filter by Make:</label>
@@ -49,31 +58,222 @@
       </div>
     </section>
 
-    <!-- Car Listings -->
-    <main>
-      <div id="carList" class="car-list"></div>
-      <div id="carDetails" class="car-details"></div>
+    <main class="main-container">
+      <div id="carList" class="car-list">
+        <!-- Toyota Corolla -->
+        <div class="car-card" data-id="1">
+          <img
+            src="https://images.unsplash.com/photo-1657872737697-737a2d123ef2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Toyota Corolla"
+          />
+          <h3>Toyota Corolla</h3>
+          <p>Year: 2020</p>
+          <p>Price: KES 1,500,000</p>
+          <button class="wishlist-btn"></button>
+          <div class="car-description" hidden>
+            <p>Reliable sedan with great fuel economy and comfort.</p>
+          </div>
+        </div>
+
+        <!-- Toyota Hilux -->
+        <div class="car-card" data-id="2">
+          <img
+            src="https://images.unsplash.com/photo-1559416523-140ddc3d238c?w=600&auto=format&fit=crop&q=60"
+            alt="Toyota Hilux"
+          />
+          <h3>Toyota Hilux</h3>
+          <p>Year: 2022</p>
+          <p>Price: KES 3,200,000</p>
+          <button class="wishlist-btn"></button>
+          <div class="car-description" hidden>
+            <p>Durable pickup truck built for tough terrain and work.</p>
+          </div>
+        </div>
+
+        <!-- Mazda Demio -->
+        <div class="car-card" data-id="3">
+          <img
+            src="https://images.unsplash.com/photo-1542319630-55fb7f7c944a?q=80&w=1170&auto=format&fit=crop"
+            alt="Mazda Demio"
+          />
+          <h3>Mazda Demio</h3>
+          <p>Year: 2021</p>
+          <p>Price: KES 1,100,000</p>
+          <button class="wishlist-btn"></button>
+          <div class="car-description" hidden>
+            <p>Compact hatchback that is fuel-efficient and practical.</p>
+          </div>
+        </div>
+        <div class="car-card" data-id="4">
+          <img
+            src="https://images.unsplash.com/photo-1668415759930-5a9dbe80c488?q=80&w=2070&auto=format&fit=crop"
+            alt="Mazda CX-5"
+          />
+          <h3>Mazda CX-5</h3>
+          <p>Year: 2023</p>
+          <p>Price: KES 2,900,000</p>
+          <button class="wishlist-btn"></button>
+          <div class="car-description" hidden>
+            <p>Stylish SUV with premium interior and advanced tech.</p>
+          </div>
+        </div>
+
+        <!-- Nissan Altima -->
+        <div class="car-card" data-id="5">
+          <img
+            src="https://images.unsplash.com/photo-1581540222194-0def2dda95b8?q=80&w=1170&auto=format&fit=crop"
+            alt="Nissan Altima"
+          />
+          <h3>Nissan Altima</h3>
+          <p>Year: 2018</p>
+          <p>Price: KES 900,000</p>
+          <button class="wishlist-btn"></button>
+          <div class="car-description" hidden>
+            <p>Smooth sedan with modern design and good handling.</p>
+          </div>
+        </div>
+
+        <!-- Nissan X-Trail -->
+        <div class="car-card" data-id="6">
+          <img
+            src="https://images.unsplash.com/photo-1569498216227-de4d67db2344?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Nissan X-Trail"
+          />
+          <h3>Nissan X-Trail</h3>
+          <p>Year: 2020</p>
+          <p>Price: KES 1,800,000</p>
+          <button class="wishlist-btn"></button>
+          <div class="car-description" hidden>
+            <p>Versatile SUV with plenty of space and off-road capability.</p>
+          </div>
+        </div>
+
+        <!-- Mercedes C-Class -->
+        <div class="car-card" data-id="7">
+          <img
+            src="https://images.unsplash.com/photo-1748569748377-64e5be57b144?q=80&w=1170&auto=format&fit=crop"
+            alt="Mercedes C-Class"
+          />
+          <h3>Mercedes C-Class</h3>
+          <p>Year: 2022</p>
+          <p>Price: KES 3,500,000</p>
+          <button class="wishlist-btn"></button>
+          <div class="car-description" hidden>
+            <p>Elegant luxury sedan with advanced safety and comfort.</p>
+          </div>
+        </div>
+
+        <!-- Mercedes GLE -->
+        <div class="car-card" data-id="8">
+          <img
+            src="https://images.unsplash.com/photo-1638980707800-8f6d3fce4598?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Mercedes GLE"
+          />
+          <h3>Mercedes GLE</h3>
+          <p>Year: 2023</p>
+          <p>Price: KES 5,800,000</p>
+          <button class="wishlist-btn"></button>
+          <div class="car-description" hidden>
+            <p>Premium SUV with powerful performance and luxury features.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wishlist -->
+      <aside class="wishlist">
+        <h2>Wishlist</h2>
+        <hr />
+        <div class="wishlist-items"></div>
+      </aside>
     </main>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about">
-      <h2>About</h2>
-      <p>
-        This is a simple car store app that lets you view cars and filter by
-        make, price, or year. Click on a car to view its details.
-      </p>
+      <div class="about-container">
+        <h2>About VeloCity Cars</h2>
+        <p>
+          At <strong>VeloCity Cars</strong>, we are passionate about connecting
+          people with the perfect vehicle. Whether you're searching for a
+          reliable sedan, a powerful SUV, or a luxurious ride, our platform
+          offers a curated selection of new and used cars from top manufacturers
+          like Toyota, Mazda, Nissan, BMW, and Mercedes.
+        </p>
+        <p>
+          Our mission is to make car shopping easier, faster, and more
+          transparent. With detailed listings, real photos, and easy-to-use
+          filters, you can browse with confidence and find the car that fits
+          your lifestyle and budget.
+        </p>
+      </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: contact@carstore.com</p>
+      <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>Have questions or need assistance? We'd love to hear from you.</p>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <p><strong>Email:</strong> support@velocitycars.com</p>
+          <p><strong>Phone:</strong> +254 700 123 456</p>
+          <p><strong>Location:</strong> Nairobi, Kenya</p>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Brian Cheruiyot. All rights reserved.</p>
+    <footer id="footer">
+      <p>&copy; 2025 Brian Cheruiyot. All rights reserved.</p>
     </footer>
+
+    <!-- Car Modal -->
+    <div id="carModal" class="modal">
+      <div class="modal-content">
+        <div class="car-modal-details">
+          <button class="close-modal">✖</button>
+          <img id="modal-img" src="" alt="" />
+          <h2 id="modal-title"></h2>
+          <p id="modal-price"></p>
+          <p id="modal-description"></p>
+          <button id="addToOrdersBtn">Order Now</button>
+        </div>
+        <div class="modal-form">
+          <form id="orderForm">
+            <input type="text" id="orderName" placeholder="Name" required />
+            <input type="email" id="orderEmail" placeholder="Email" required />
+            <input type="tel" id="orderMobile" placeholder="Mobile" required />
+            <input
+              type="text"
+              id="orderLocation"
+              placeholder="Location"
+              required
+            />
+            <textarea
+              id="orderMessage"
+              placeholder="Message"
+              rows="4"
+            ></textarea>
+            <button type="submit">Submit Order</button>
+            <button type="button" id="cancelOrder">Cancel</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Orders Popup -->
+    <div id="ordersModal" class="modal">
+      <div class="orders-modal-content">
+        <button class="close-modal">✖</button>
+        <h2>Orders</h2>
+        <hr />
+        <div id="ordersList"></div>
+      </div>
+    </div>
 
     <script src="./src/index.js" defer></script>
   </body>
