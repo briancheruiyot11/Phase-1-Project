@@ -13,7 +13,6 @@
 - 📄 View more info and order cars using a modal popup  
 - 📝 Submit orders with contact info (name, email, location, message)  
 - 🔁 View, edit, and delete submitted orders in a popup dashboard  
-- 📦 Mock backend using JSON Server (`db.json`)
 
 
 
@@ -30,6 +29,7 @@
 ## 📌 How to use
 
 1. 🌐 **Open the app** – Visit the live link in your browser.
+https://briancheruiyot11.github.io/Phase-1-Project/
 
 2. 🚗 **Browse cars** – View all available cars with their details.
 
