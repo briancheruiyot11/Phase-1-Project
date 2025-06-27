@@ -9,7 +9,7 @@ body {
 /*  Header & Navigation  */
 header {
   background: #cdcdca;
-  position: sticky; /* Sticks to top on scroll */
+  position: sticky;
   top: 0;
   z-index: 1000;
 }
@@ -61,7 +61,7 @@ header {
 /*  Main Layout: Car List + Wishlist  */
 .main-container {
   display: grid;
-  grid-template-columns: 4fr 1fr; /* Car list takes more space */
+  grid-template-columns: 4fr 1fr;
   padding: 2rem;
   column-gap: 2rem;
 }
@@ -205,30 +205,6 @@ header {
   padding: 0;
 }
 
-/*  Responsive Design  */
-@media (max-width: 1024px) {
-  .car-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (max-width: 768px) {
-  .main-container {
-    grid-template-columns: 1fr;
-  }
-  .car-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .wishlist {
-    max-width: 100%;
-    margin-top: 2rem;
-  }
-}
-@media (max-width: 480px) {
-  .car-list {
-    grid-template-columns: 1fr;
-  }
-}
-
 /*  Modal Overlay Container  */
 .modal {
   display: none;
@@ -301,7 +277,7 @@ header {
 /*  Right: Order Form in Modal  */
 .modal-form {
   flex: 1 1 300px;
-  display: none; /* Hidden by default until activated */
+  display: none;
 }
 .modal-form form {
   display: flex;
@@ -343,7 +319,7 @@ header {
 #ordersList {
   text-align: left;
   margin-top: 1rem;
-  max-height: 400px;
+  max-height: 80%;
   overflow-y: auto;
   padding-right: 10px;
 }
@@ -386,4 +362,71 @@ header {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   position: relative;
   border: 2px solid maroon;
+}
+
+/* media responsiveness*/
+
+/* Tablets and small desktops */
+@media (max-width: 1024px) {
+  .car-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablets and large phones */
+@media (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+
+  .car-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wishlist {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+
+  .modal-content {
+    flex-direction: column;
+    width: 90% !important;
+  }
+
+  .orders-modal-content {
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .car-list {
+    grid-template-columns: 1fr;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  #hero h1 {
+    font-size: 1.6rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+  }
+
+  .modal-content {
+    padding: 10px;
+  }
+
+  .orders-modal-content {
+    padding: 10px;
+  }
 }
