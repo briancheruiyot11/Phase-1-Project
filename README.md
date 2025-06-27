@@ -2,8 +2,7 @@
 
 ## Description
 
-**VeloCity Cars** is a modern, responsive single-page car store web application. Users can browse a curated list of vehicles, filter and search based on various criteria, add cars to a wishlist, and place orders. It uses a local JSON server to handle and persist wishlist and order data.
-
+**VeloCity Cars** is a modern, responsive single-page car store web application. Users can browse a curated list of vehicles, filter and search based on various criteria, add cars to a wishlist, and place orders. It uses a hosted JSON server on Render to handle and persist wishlist and order data.
 
 
 ## Features
@@ -51,10 +50,11 @@
 10. ✏️ **Edit/Delete** – In the Orders view, click "Edit" to update or "Delete" to remove.
 
 
-## Author & License
+## 👨‍💻 Author 
 
 Created by **Brian Cheruiyot**
 
+## 📄 License
 
 ### MIT License
 
