@@ -24,7 +24,8 @@
 - **Data format:** JSON (`db.json`)
 
 ## Website Overview
-![WhatsApp Image 2025-06-27 at 04 11 48_afa6fb72](https://github.com/user-attachments/assets/19155941-abe5-43e1-a813-48a921af2fc6)
+![WhatsApp Image 2025-06-27 at 17 21 32_00bbc8ab](https://github.com/user-attachments/assets/33d68121-542e-4b49-b464-3ebc25556b2b)
+
 
 ## 📌 How to use
 
