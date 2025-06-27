@@ -45,6 +45,10 @@ header {
   background: #ddd;
   color: maroon;
 }
+h1 {
+  color: black;
+  font-size: 2.5rem;
+}
 
 /*  Filter/Search/Sort Controls  */
 .controls {
@@ -353,7 +357,7 @@ header {
   background-color: #fff;
   color: #333;
   border-radius: 8px;
-  width: 25%;
+  width: 60%;
   height: 75%;
   max-width: 800px;
   flex-wrap: wrap;
@@ -363,70 +367,78 @@ header {
   position: relative;
   border: 2px solid maroon;
 }
-
-/* media responsiveness*/
-
-/* Tablets and small desktops */
+/*  Responsive Design  */
 @media (max-width: 1024px) {
   .car-list {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-/* Tablets and large phones */
 @media (max-width: 768px) {
   .main-container {
     grid-template-columns: 1fr;
   }
-
   .car-list {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .wishlist {
     max-width: 100%;
     margin-top: 2rem;
   }
-
-  .modal-content {
-    flex-direction: column;
-    width: 90% !important;
-  }
-
-  .orders-modal-content {
-    width: 90%;
-    height: auto;
-  }
 }
-
-/* Small phones */
 @media (max-width: 480px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
   .car-list {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
-  .logo {
-    font-size: 20px;
+  .modal-form,
+  .car-modal-details {
+    flex: 1 1 100%;
+  }
+}
+/* Hamburger menu button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* Hide nav links on mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
   }
 
-  #hero h1 {
-    font-size: 1.6rem;
-  }
-
-  #hero p {
-    font-size: 1rem;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 0.9rem;
-  }
-
-  .modal-content {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: maroon;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
     padding: 10px;
+    border-radius: 8px;
+    z-index: 1001;
   }
 
-  .orders-modal-content {
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links a {
     padding: 10px;
   }
 }

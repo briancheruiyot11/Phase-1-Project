@@ -2,7 +2,6 @@
 const API_URL = "https://phase-1-project-221n.onrender.com/wishlist";
 const ORDERS_URL = "https://phase-1-project-221n.onrender.com/orders";
 
-
 // DOM Elements Selection
 const carList = document.getElementById("carList");
 const wishlistContainer = document.querySelector(".wishlist-items");
@@ -343,6 +342,13 @@ async function main() {
 
   renderWishlist();
   updateDisplay();
+
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
 }
 
 // Start app once the DOM is loaded
