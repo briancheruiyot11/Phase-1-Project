@@ -1,6 +1,7 @@
-// API Endpoints
-const API_URL = "http://localhost:3000/wishlist";
-const ORDERS_URL = "http://localhost:3000/orders";
+// API Endpoints (render live api)
+const API_URL = "https://phase-1-project-221n.onrender.com/wishlist";
+const ORDERS_URL = "https://phase-1-project-221n.onrender.com/orders";
+
 
 // DOM Elements Selection
 const carList = document.getElementById("carList");
