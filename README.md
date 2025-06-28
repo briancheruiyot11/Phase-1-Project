@@ -10,7 +10,7 @@
 - ✅ Browse cars with details like make, year, and price  
 - 🔍 Filter cars by make, search by keyword, and sort by price or year  
 - ❤️ Add and remove cars from a wishlist (with persistent storage)  
-- 📄 View more info and order cars using a modal popup  
+- 🚗 Click on a car to view more info and place an order using a modal popup
 - 📝 Submit orders with contact info (name, email, location, message)  
 - 🔁 View, edit, and delete submitted orders in a popup dashboard  
 
