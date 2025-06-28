@@ -19,7 +19,7 @@
 ## 🧰 Technologies Used
 
 - **Front-End:** HTML, CSS, JavaScript  
-- **Back-End:** JSON Server  
+- **Back-End:** JSON Server  https://phase-1-project-221n.onrender.com
 - **Styling:** CSS + responsive design  
 - **Data format:** JSON (`db.json`)
 
